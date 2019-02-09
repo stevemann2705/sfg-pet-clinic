@@ -5,7 +5,7 @@
     <title>List of Vets</title>
 </head>
 <body>
-<!--/*@thymesVar id="vets" type="in.stevemann.sfgpetclinic.model.Vet"*/-->
+<!--/*@thymesVar id="vet" type="in.stevemann.sfgpetclinic.model.Vet"*/-->
     <h1 th:text="'List of Vets'">List of Vets</h1>
     <table>
         <thead>
@@ -17,9 +17,9 @@
         </thead>
         <tbody>
         <tr th:each="vet:${vets}">
-            <td th:text="${vets.id}">id</td>
-            <td th:text="${vets.firstName}">firstname</td>
-            <td th:text="${vets.lastName}">lastname</td>
+            <td th:text="${vet.id}">id</td>
+            <td th:text="${vet.firstName}">firstname</td>
+            <td th:text="${vet.lastName}">lastname</td>
         </tr>
         </tbody>
     </table>
