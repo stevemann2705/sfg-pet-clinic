@@ -9,6 +9,10 @@
 
     <artifactId>pet-clinic-data</artifactId>
 
+    <properties>
+        <spring-boot.repackage.skip>true</spring-boot.repackage.skip>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -41,9 +45,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>in.stevemann.sfgpetclinic.SfgPetClinicApplication</mainClass>
-                </configuration>
                 <executions>
                     <execution>
                         <goals>
