@@ -27,9 +27,11 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "pom.xml" }}
+            - v1-dependencies-{{ checksum "pom.xml" }}-{{ checksum "pet-clinic-data/pom.xml" }}-{{ checksum "pet-clinic-web/pom.xml" }}
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
+
+      - run: mvn clean install
 
       - run: mvn dependency:go-offline
 
