@@ -1,2 +1,4 @@
-# sfg-pet-clinic
-SFG Pet Clinic Project
+# SFG Pet Clinic Project [![CircleCI](https://circleci.com/gh/stevemann2705/sfg-pet-clinic.svg?style=svg&circle-token=64206a2874ca629a870ef67c2e26f3498a9f9cba)](https://circleci.com/gh/stevemann2705/sfg-pet-clinic)
+
+Contained in this repo is an opinionated version of the classic reference application - [Spring Pet Clinic](https://github.com/spring-projects/spring-petclinic). <br>
+This project was made following the [Spring Framework 5: Beginner to Guru](https://www.udemy.com/spring-framework-5-beginner-to-guru/?couponCode=GITHUB_SFGPETCLINIC) course by [John Thompson](https://github.com/springframeworkguru)
